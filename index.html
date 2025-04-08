@@ -20,7 +20,7 @@
 <body>
  <!-- Header Part -->
 
- <header class="bg-[#5855E7] py-4 px-5">
+ <header class="sticky top-0 z-10 bg-[#5855E7] py-4 px-5">
 
     <div class=" container flex items-center justify-between gap-0"   >
 
@@ -28,37 +28,52 @@
         <img src="./images/logo-img.svg" alt="Site Logo" width="156" height="111">
       </a>
 
-      <nav class="flex items-center justify-start gap-[35px]"
+      <nav class="flex items-center justify-start gap-[35px] "
       >
 
-        <a class="font-medium text-[24px] leading-[100%] tracking-0 text-white transition-all duration-400 hover:text-[#A23AC1]"
+        <a class="font-medium text-[24px] leading-[100%] tracking-0 text-white transition-all duration-400 hover:text-[#A23AC1]  hidden  sm:block"
         href="#">0 нашей школе</a>
 
-        <a class="font-medium text-[24px] leading-[100%] tracking-0 text-white transition-all duration-400 hover:text-[#A23AC1]"
+        <a class="font-medium text-[24px] leading-[100%] tracking-0 text-white transition-all duration-400 hover:text-[#A23AC1] hidden  sm:block"
         href="#">Преимущества</a>
 
-        <a class="font-medium text-[24px] leading-[100%] tracking-0 text-white transition-all duration-400 hover:text-[#A23AC1]"
+        <a class="font-medium text-[24px] leading-[100%] tracking-0 text-white transition-all duration-400 hover:text-[#A23AC1] hidden  sm:block"
         href="#">Классы</a>
 
-        <a class="font-medium text-[24px] leading-[100%] tracking-0 text-white transition-all duration-400 hover:text-[#A23AC1]"
+        <a class="font-medium text-[24px] leading-[100%] tracking-0 text-white transition-all duration-400 hover:text-[#A23AC1] hidden  sm:block "
         href="#">Контакты </a>
 
       </nav>
 
-      <div class="header__btns-wrapper">
+      <div class="">
 
-        <button class="font-medium text-[24px] leading-[100%] tracking-0 text-black py-3.5 px-8 rounded-[10px] bg-white border-3 border-transparent transition-all duration-400 hover:text-white hover:bg-[#A23AC1]"
-        class="header__contact-btn">Связаться с нами </button>
+        <button class="font-medium text-[24px] leading-[100%] tracking-0 text-black py-3.5 px-8 rounded-[10px] bg-white border-3 border-transparent transition-all duration-400 hover:text-white hover:bg-[#A23AC1] hidden  sm:block"
+      >Связаться с нами </button>
+    </div>
+
+        <!-- Menu part -->
+         <div class=" sm: flex justify-between gap-[15px] ">
+          <button class="block sm:hidden  ">
+
+            <img src="./images/phone-img/Call.svg" alt="img" width="30" height="30">
+  
+          </button>
+  
+          <button class="block sm:hidden">
+             <img src="./images/menu-img/Group 1728.png" alt="Img" width="30" height="30">
+          </button>
+         </div>
+      </div>
+    </div>
   </div>
     </div>
     </div>
-
   </header>
   <!-- Hero Part -->
    <main class="site-main">
     <section class="hero-section">
-      <div class="container  relative overflow-y-hidden flex items-start justify-between gap-0 relative  ">
-        <div class="  max-w-[560px] px-5 mt-[180px]  mb-[150px]"
+      <div class="container  relative overflow-y-hidden flex items-start justify-between gap-0">
+        <div class="  max-w-[560px] px-5 mt-[180px]  mb-[150px] "
         >
           <h2 class=" mb-[40px] font-bold text-[40px] leading-[100%] tracking-0 text-black"
           >
@@ -78,12 +93,12 @@
           </div>
         </div>
         <div class="hero__second-wrapper">
-            <img class="absolute right-0 top-0 " src="./images/hero-img.png" alt="img" >
+            <img class="absolute right-0 top-0  " src="./images/hero-img.png" alt="img" >
           </div>
       </div>
     </section>
     <!-- About us part -->
-    <section class="about-section">
+     <section class="about-section">
         <div class="container py-[214px] px-[138px] flex justify-between   ">
           <div >
             <img src="./images/about-img.png" alt="img" width="534" height="492">
@@ -103,9 +118,9 @@
             <span class="font-normal text-[24px] leading-[100%]  tracking-0 text-[#000000] w-[100%] "> Все условия и комфорт для ваших детей!</span>
           </div>
         </div>
-      </section>
+      </section> 
     <!-- Advantage part -->
-      <section class="Advantage-section bg-[#5855E7]">
+       <section class="Advantage-section bg-[#5855E7]">
         <div class="container   ">
           <h2 class="font-bold text-[40px] pt-[73px] leading-100% tracking-0 text-[white] text-center" >Наши преимущества</h2>
           <div class=" text-center m-auto">
@@ -141,9 +156,9 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> 
        <!-- class part -->
-     <section class="class-section">
+      <section class="class-section">
       <div class="container pt-[214px]">
         <h2 class="font-bold text-[40px] leading-100% tracking-0 text-[#000000] text-center pb-[87px]">Классы
         </h2>
@@ -157,7 +172,7 @@
                   <p class="  font-normal text-[14px] leading-100% tracking-0 text-[white] text-center pl-[38px] pr-[25px] pt-[20px] pb-[30px]">
                     Изучение калиграфии, логопедия, английский этикет, разговорный английский, общеобразовательные предметы и спортивные занятия
                   </p>
-                  <button class="bg-white mb-[33px] w-[147px] h-[32px] m-auto text-[#5855E7] rounded-[5px] font-medium text-[18px] leading-100% tracking-0 hover:bg-[#6347EB] hover:text-[white] ">  Записаться</button>
+                  <button class="bg-white mb-[33px] w-[147px] h-[32px] m-auto text-[#5855E7] rounded-[5px] font-medium text-[18px] leading-100% tracking-0 transition-all duration-400  hover:bg-[#6347EB] hover:text-[white] ">  Записаться</button>
               </div>
             </li>
             <li class=" bg-[#5855E7] w-[301px] rounded-[15px]">
@@ -168,7 +183,7 @@
                   <p class="  font-normal text-[14px] leading-100% tracking-0 text-[white] text-center pl-[38px] pr-[25px] pt-[20px] pb-[30px]">
                     Изучение калиграфии, логопедия, английский этикет, разговорный английский, общеобразовательные предметы и спортивные занятия
                   </p>
-                  <button class="bg-white mb-[33px] w-[147px] h-[32px] m-auto text-[#5855E7] rounded-[5px] font-medium text-[18px] leading-100% tracking-0 hover:bg-[#6347EB] hover:text-[white] ">  Записаться</button>
+                  <button class="bg-white mb-[33px] w-[147px] h-[32px] m-auto text-[#5855E7] rounded-[5px] font-medium text-[18px] leading-100% transition-all duration-400  tracking-0 hover:bg-[#6347EB] hover:text-[white] ">  Записаться</button>
               </div>
             </li>
             <li class="bg-[#5855E7] w-[301px] rounded-[15px]">
@@ -179,7 +194,7 @@
                   <p class="  font-normal text-[14px] leading-100% tracking-0 text-[white] text-center pl-[38px] pr-[25px] pt-[20px] pb-[30px]">
                     Изучение калиграфии, логопедия, английский этикет, разговорный английский, общеобразовательные предметы и спортивные занятия
                   </p>
-                  <button class="bg-white mb-[33px] w-[147px] h-[32px] m-auto text-[#5855E7] rounded-[5px] font-medium text-[18px] leading-100% tracking-0 hover:bg-[#6347EB] hover:text-[white] ">  Записаться</button>
+                  <button class="bg-white mb-[33px] w-[147px] h-[32px] m-auto text-[#5855E7] rounded-[5px] font-medium text-[18px] leading-100% transition-all duration-400  tracking-0 hover:bg-[#6347EB] hover:text-[white] ">  Записаться</button>
               </div>
             </li>
             <li class="bg-[#5855E7] w-[301px] rounded-[15px]">
@@ -190,7 +205,7 @@
                   <p class="  font-normal text-[14px] leading-100% tracking-0 text-[white] text-center pl-[38px] pr-[25px] pt-[20px] pb-[30px]">
                     Изучение калиграфии, логопедия, английский этикет, разговорный английский, общеобразовательные предметы и спортивные занятия
                   </p>
-                  <button class="bg-white mb-[33px] w-[147px] h-[32px] m-auto text-[#5855E7] rounded-[5px] font-medium text-[18px] leading-100% tracking-0 hover:bg-[#6347EB] hover:text-[white] ">  Записаться</button>
+                  <button class="bg-white mb-[33px] w-[147px] h-[32px] m-auto text-[#5855E7] rounded-[5px] font-medium text-[18px] leading-100% tracking-0 transition-all duration-400  hover:bg-[#6347EB] hover:text-[white] ">  Записаться</button>
               </div>
             </li>
             <li class="bg-[#5855E7] w-[301px] rounded-[15px]">
@@ -201,20 +216,20 @@
                   <p class="  font-normal text-[14px] leading-100% tracking-0 text-[white] text-center pl-[38px] pr-[25px] pt-[20px] pb-[30px]">
                     Изучение калиграфии, логопедия, английский этикет, разговорный английский, общеобразовательные предметы и спортивные занятия
                   </p>
-                  <button class="bg-white mb-[33px] w-[147px] h-[32px] m-auto text-[#5855E7] rounded-[5px] font-medium text-[18px] leading-100% tracking-0 hover:bg-[#6347EB] hover:text-[white] ">  Записаться</button>
+                  <button class="bg-white mb-[33px] w-[147px] h-[32px] m-auto text-[#5855E7] rounded-[5px] font-medium text-[18px] leading-100% tracking-0 transition-all duration-400  hover:bg-[#6347EB] hover:text-[white] ">  Записаться</button>
               </div>
             </li>
           </ul>
         </div>
       </div>
-     </section>
+     </section> 
       <!-- Connect us part -->
-      <section class="connect-section">
+       <section class="connect-section">
         <div class="container max-w-[1100px]">
           <h2 class="pt-[186px] font-bold text-[40px] leading-100% tracking-0 text-center text-[black] pb-[81px]">Связаться с нами </h2>
-           <div class="bg-[#5855E7] flex p-[50px] gap-[100px]">
+           <div class="bg-[#5855E7] flex p-[50px] gap-[100px]"> 
               <!-- firs part -->
-            <div class="max-w-[500px]  ">
+             <div class="max-w-[500px]  ">
               <strong class="font-medium text-[40px] leading-100% tracking-0 text-[white]"> Контакты </strong>
               <ul class="connect-list">
                 <li class="flex items-center gap-[12px] pt-[28px]">
@@ -233,7 +248,7 @@
               <img class="pt-[40px]" src="./images/about-img.png" alt="img" width="485" height="338">
             </div>
             <!-- Second part -->
-            <div class="flex flex-col  ">
+             <div class="flex flex-col  ">
               <strong class=" w-[100%] font-medium text-[40px] leading-100% tracking-0 text-[white]">Оставьте заявку</strong>
               <p class="w-[90%] font-normal text-[24px] leading-100% tracking-0  text-[white] pt-[28px] pb-[20px]" >В честь открытия нашей школы дарим скидку -20%</p>
               <form class="flex flex-col" action="https://htmlacademy.ru" method="post" autocomplete="off" >
@@ -241,14 +256,14 @@
                 <input class="text-start pt-[15px] pr-[151px] pb-[19px] pl-[12px] mt-[26px] rounded-[5px] border-none"  required name="Фамилия" aria-label="Фамилия" placeholder="Фамилия" type="text">
                 <input class="text-start pt-[15px] pr-[151px] pb-[224px] pl-[12px] mt-[26px] rounded-[5px] border-none"  required name="Номер" aria-label="Номер" placeholder="Номер" type="text">
               </form>
-              <button type="submit" class="ml-[253px] w-[197px] h-[52px] bg-white mt-[24px] rounded-[5px] hover:bg-[#A23AC1] hover:text-white"> Отправить</button>
+              <button type="submit" class="ml-[253px] w-[197px] h-[52px] bg-white mt-[24px] rounded-[5px] transition-all duration-400  hover:bg-[#A23AC1] hover:text-white"> Отправить</button>
             </div>
            </div>
         </div>
-      </section> 
+      </section>   
    </main>
     <!-- Footer Part -->
-   <footer>
+    <footer>
     <div class="bg-[#5855E7] mt-[97px]">
       <div class="container flex justify-between">
         <a class="py-[28px]" href="/">
@@ -297,7 +312,7 @@
          </div>
       </div>
     </div>
-   </footer>
-    <script src="https://cdn.tailwindcss.com"></script>
+   </footer> 
+   <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
